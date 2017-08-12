@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-header-logo" href="index.html">
+          <img src="http://placehold.it/150x100" alt="Логотип">
+        </a
+        <ul>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-nav"><!--Нужно ли использовать ul?-->
+          <li class="basket">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Cтоимость</h2>
+        <p>Стоимость</p>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="price-output.value=price-count.value">
+
+          <label for=" visually-hidden price-count">Диапазон стоимости</label>         <!-- ?-->
+          <b>0</b><input type="range" min="0" max="15000" step="1" id="price-count" name="price-count"><b>15000</b>
+          <div class="output-area">
+            от <output name="price-output"></output>
+            до <output name="price-output"></output>
+        </div>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" checked>
+              Адаптивная
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="Fixed">
+              Фиксированная
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber">
+              Резиновая
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+              Слайдер
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block">
+              Блок преимуществ
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+              Новости
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+              Галерея
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bascet">
+              Корзина
+            </li>
+          </ul>
+        </fieldset>
+        <button class="filters-button">Показать</a>
+        </form>
+      </section>
+      <section>
+       <h2 class="visually-hidden">Сортирока шаблонов</h2>
+       <p class="sort"> Сортировать:</p>
+       <ul>
+         <li class="sort-item"><a>По цене</a></li>
+         <li class="sort-item"><a href="#">По типу</a></li>
+         <li class="sort-item"><a href="#">По названию</a></li>
+       </ul>
+       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Sedona"></a></p>
+       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Pink"></a></p>
+       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Borodinsky"></a></p>
+       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Mishka"></a></p>
+       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт A+"></a></p>
+       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Кваст"></a></p>
+      </section>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a >1</a></li>
+        <li class="pagination-item" ><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+
+      </ul>
+    </main>
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="footer-contacts"><span>NЁRDS DESIGN STUDIO<span><br>
+         191186, Санкт-Петербург,<br>
+         ул. Б. Конюшенная, д. 19/8<br>
+         тел. +7 (812) 275-75-75
+      </p>
+      <a class="button footer-contacts-button" href="#">Напишите нам</a>
+      <a class="main-footer-logo mini-logo" href="index.html">
+        <img src="http://placehold.it/150x100" alt="Логотип">
+      </a>
+     <div class="footer-social">
+       <ul>
+         <li><a class="social-button" href="#">vk.com</a></li>
+         <li><a class="social-button" href="#">facebook.com</a></li>
+         <li><a class="social-button" href="#">Instagram</a></li>
+       </ul>
+     </div>
+     <p class="footer-inscription">
+       Давайте дружить, это выгодно!<br>
+       Скидка 10% для друзей из социальных сетей
+     </p>
+   </footer>
+   </body>
+ </html>
