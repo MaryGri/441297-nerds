@@ -3,94 +3,89 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-header-logo" href="index.html">
-          <img src="http://placehold.it/150x100" alt="Логотип">
-        </a
-        <ul>
+          <img src="img/nerds-logo.svg" alt="Логотип" width="161" height="67">
+        </a>
+        <ul class="site-nav">
           <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="user-nav"><!--Нужно ли использовать ul?-->
-          <li class="basket">Корзина</li>
+        <ul class="user-nav">
+          <li ><a href="#" class="basket">Корзина</a></li>
         </ul>
       </nav>
     </header>
+
     <main class="container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
-        <h2 class="visually-hidden">Cтоимость</h2>
-        <p>Стоимость</p>
-        <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="price-output.value=price-count-field.value">
-
-          <label for=" visually-hidden price-count">Диапазон стоимости</label>         <!-- ?-->
+        <h2 class="visually-hidden">Cтоимость:</h2>
+        <p class="filter-type">Стоимость</p>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get"
+         oninput="price-output.value=price-count-field.value">
+          <label class="visually-hidden" for="price-count-field">Диапазон стоимости</label>         <!-- ?-->
           <b>0</b><input type="range" min="0" max="15000" step="1" id="price-count-field" name="price"><b>15000</b>
           <div class="output-area">
             от <output name="price-output">1</output>
-            до <output name="price-output">15</output>
+            до <output name="price-output">15000</output>
         </div>
         <fieldset>
-          <legend>Сетка:</legend>
-          <ul>
+          <legend class="filter-type">Сетки:</legend>
+          <ul class="type-list">
             <li class="filter-option">
-              <label for="grid-adaptive"></label>
+              <label for="grid-adaptive">Адаптивная</label>
               <input class="visually-hidden filter-input filter-input-radio"
                type="radio" id="grid-adaptive" name="grid" value="adaptive" checked>
-              Адаптивная
             </li>
             <li class="filter-option">
-              <label for="grid-fixed"></label>
+              <label for="grid-fixed">Фиксированная</label>
               <input class="visually-hidden filter-input filter-input-radio"
                type="radio" id="grid-fixed" name="grid" value="Fixed">
-              Фиксированная
             </li>
             <li class="filter-option">
-              <label for="grid-rubber"></label>
+              <label for="grid-rubber">Резиновая</label>
               <input class="visually-hidden filter-input filter-input-radio"
                type="radio" id="grid-rubber" name="grid" value="rubber">
-              Резиновая
             </li>
           </ul>
         </fieldset>
 
         <fieldset>
-          <legend>Особенности:</legend>
-          <ul>
-            <li class="filter-option>
-            <label for="filter-slider"></label>
+          <legend class="filter-type">Особенности:</legend>
+          <ul class="type-list">
+            <li class="filter-option">
+            <label for="filter-slider">Слайдер</label>
               <input class="visually-hidden filter-input filter-input-checkbox"
               type="checkbox" id="filter-slider" name="slider" checked>
-              Слайдер
             </li>
             <li class="filter-option">
-              <label for="filter-advantage-block"></label>
+              <label for="filter-advantage-block">Блок преимуществ</label>
               <input class="visually-hidden filter-input filter-input-checkbox"
                type="checkbox"  id="filter-advantage-block" name="advantage-block">
-              Блок преимуществ
             </li>
             <li class="filter-option">
-              <label for="filter-news"></label>
+              <label for="filter-news">Новости</label>
               <input class="visually-hidden filter-input filter-input-checkbox"
               type="checkbox" id="filter-news" name="news" checked>
-              Новости
             </li>
             <li class="filter-option">
-              <label for="filter-gallery"></label>
+              <label for="filter-gallery">Галерея</label>
               <input class="visually-hidden filter-input filter-input-checkbox"
               type="checkbox" id="filter-gallery" name="gallery">
-              Галерея
             </li>
             <li class="filter-option">
-              <label for="filter-bascet"></label>
+              <label for="filter-bascet">Корзина</label>
               <input class="visually-hidden filter-input filter-input-checkbox"
               type="checkbox" id="filter-bascet" name="bascet">
-              Корзина
             </li>
           </ul>
         </fieldset>
@@ -99,50 +94,52 @@
       </section>
       <section>
        <h2 class="visually-hidden">Сортирока шаблонов</h2>
-       <p class="sort"> Сортировать:</p>
-       <ul>
-         <li class="sort-item"><a>По цене</a></li>
-         <li class="sort-item"><a href="#">По типу</a></li>
-         <li class="sort-item"><a href="#">По названию</a></li>
+       <p class="filter-type"> Сортировать:</p>
+       <ul class="sort-list">
+         <li class="sort-item"><button class="sort-button">По цене</a></li>
+         <li class="sort-item"><button class="sort-button">По типу</a></li>
+         <li class="sort-item"><button class="sort-button">По названию</a></li>
        </ul>
 
-       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Sedona"></a></p>
-       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Pink"></a></p>
-       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Borodinsky"></a></p>
-       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Mishka"></a></p>
-       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт A+"></a></p>
-       <p class="sort-model"><a href="#"><img src="http://placehold.it/150x100" alt="Сайт Кваст"></a></p>
+       <p class="sort-model"><a href="#"><img src="img/img-sedona.jpg" alt="Сайт Sedona"></a></p>
+       <p class="sort-model"><a href="#"><img src="img/img-pink.jpg" alt="Сайт Pink"></a></p>
+       <p class="sort-model"><a href="#"><img src="img/img-barbershop.jpg" alt="Сайт Borodinsky"></a></p>
+       <p class="sort-model"><a href="#"><img src="img/img-mishka.jpg" alt="Сайт Mishka"></a></p>
+       <p class="sort-model"><a href="#"><img src="img/img-aplus.jpg" alt="Сайт A+"></a></p>
+       <p class="sort-model"><a href="#"><img src="img/img-kvast.jpg" alt="Сайт Кваст"></a></p>
 
       </section>
       <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a >1</a></li>
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
         <li class="pagination-item" ><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
 
       </ul>
     </main>
     <footer class="main-footer">
+      <section class="road-map">
       <h2 class="visually-hidden">Контакты</h2>
-      <p class="footer-contacts"><span>NЁRDS DESIGN STUDIO<span><br>
+      <p class="footer-contacts"><span>Nёrds Design Studio</span><br>
          191186, Санкт-Петербург,<br>
          ул. Б. Конюшенная, д. 19/8<br>
          тел. +7 (812) 275-75-75
       </p>
-      <a class="button footer-contacts-button" href="#">Напишите нам</a>
+      <a class="buttom footer-contacts-buttom" href="#" >Напишите нам</a>
       <a class="main-footer-logo mini-logo" href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип">
+        <img src="img/nerds-logo.svg" alt="Логотип" width="91" height="36">
       </a>
+    </section>
      <div class="footer-social">
-       <ul>
-         <li><a class="social-button" href="#">vk.com</a></li>
-         <li><a class="social-button" href="#">facebook.com</a></li>
-         <li><a class="social-button" href="#">Instagram</a></li>
+       <ul class="social-networks">
+         <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="vk.com" ></a></li>
+         <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="facebook.com" ></a></li>
+         <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Instagram" ></a></li>
        </ul>
      </div>
      <p class="footer-inscription">
-       Давайте дружить, это выгодно!<br>
+       <span>Давайте дружить, это выгодно!</span><br>
        Скидка 10% для друзей из социальных сетей
      </p>
    </footer>
-   </body>
- </html>
+ </body>
+</html>
