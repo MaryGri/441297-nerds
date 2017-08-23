@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color:#283136;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  font-size: 16px;
+  line-height: 30px;
+  background-color: #eeeeee;
+}
+
+.user-nav,
+.site-nav {
+  list-style: none;
+}
+
+.user-nav a,
+.site-nav a {
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.user-nav a:hover,
+.site-nav a:hover,
+.user-nav a:focus,
+.site-nav a:focus {
+  color: #fb565a;
+}
+
+/*
+.user-nav a:visited,
+.site-nav a:visited {
+  color: rgba(0,0,0,0.3);
+}
+
+.user-nav a:active,
+.site-nav a:active {
+  border-bottom:1px solid red;
+
+логотип -нажатие
+для корзины иконку добавить
+}*/
+
+.main-header-logo img:hover{ /*--*/
+  opacity: 0.3;
+}
+
+.main-top{
+  background-color: #eeeeee;
+}
+
+.visually-hidden{
+  display: none;
+}
+
+.basket::before{
+  background-image: url("img/cart-icon.svg") 0 0 no-repeat;
+}
+
+.big-paragraf {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.buttom{
+  color: #ffffff;
+}
+
+.buttom-description{
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-left: 55px;
+  padding-right: 55px;
+  background-color: #fb565a;
+  border-radius: 2px;
+}
+
+.buttom-description:hover{
+  background-color: #e74246;
+}
+
+.buttom-description:active{
+  background-color: #d7373b;
+}
+
+.catalog{
+  list-style: none;
+}
+
+.catalog-item-name{
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.buttom-order{
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 2px;
+}
+
+.buttom-red{
+  background-color: #fb565a;
+}
+
+.buttom-red:hover{            /*цвет текста в hover $ active*/
+  background-color: #e74246;
+}
+
+.buttom-red:active{
+  background-color: #d7373b;
+}
+
+.buttom-green{
+  background-color: #00ca74;
+}
+
+.buttom-green:hover{
+  background-color: #00bc6c;
+}
+
+.buttom-green:active{
+  background-color: #00aa62;
+}
+
+.buttom-yellow{
+  background-color: #efc84a;
+}
+
+.buttom-yellow:hover{
+  background-color: #eab534;
+}
+
+.buttom-yellow:active{
+  background-color: #e5a722;
+}
+
+.middle-paragraf{
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.our-servises{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+caption{
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space:nowrap;
+}
+
+th{
+  font-size: 45px;
+  line-height: 10.06px;
+}
+
+.clients-column {
+  list-style: none;
+}
+
+.clients-item img {
+opacity: 0.2;
+}
+
+.clients-item img:hover{
+opacity: 1;
+}
+
+.clients-item img:active{
+opacity: 0.1;
+}
+
+.footer-contacts{
+  color: #666666;
+  line-height: 18px;
+}
+
+.footer-contacts span{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footer-contacts-buttom{
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #fb565a;
+  border-radius: 2px;
+}
+
+.road-map{
+  background-image: url("../img/map.jpg");
+}
+
+.social-networks{
+  list-style: none;
+}
+
+.social-button{
+
+}
+
+.footer-inscription{
+  line-height: 22px;
+}
+
+.footer-inscription span{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
