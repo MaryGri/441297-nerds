@@ -226,3 +226,90 @@ opacity: 0.1;
   font-size: 36px;
   line-height: 36px;
 }
+/*--INNER--*/
+.page-title {
+  background-color: #eeeeee;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.filter-type {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-option label{
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-option label:hover{
+  color: #000000;
+}
+
+.filter-option label:disabled{
+  opacity: 0.2;
+}
+
+
+.type-list,
+.sort-list,
+.pagination-list {
+  list-style: none;
+}
+
+fieldset {
+  border: none;
+}
+
+.filters-button{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filters-button:hover{
+  background-color: #dfdfdf;
+}
+
+.filters-button:active{
+  background-color: #d5d5d5;
+  color: #a9a9a9;
+  border-top: 3px solid #bfbfbf;
+}
+
+.sort-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+}
+
+.sort-button:hover{
+  opacity: 0.6;
+}
+
+.sort-button:active{
+  opacity: 1;
+  border: none;
+}
+
+.pagination-item a{
+  color: #0000;
+  width: 50px;
+  height: 50px;
+  background-color: #eeeeee;
+  text-align: center;
+  vertical-align:middle;
+
+}
