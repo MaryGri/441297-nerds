@@ -214,7 +214,22 @@ opacity: 0.1;
 }
 
 .social-button{
+    display: inline-block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: #e1e1e1;
+    vertical-align: middle;
+    border-radius: 50%;
+}
 
+.social-button:hover{
+    background-color: #e74246;
+}
+
+.social-button:active{
+    background-color: #d7373b;
+    color: #e37376;
 }
 
 .footer-inscription{
@@ -239,16 +254,15 @@ opacity: 0.1;
   text-transform: uppercase;
 }
 
-.filter-option label{
+.filter-input + label{
   line-height: 20px;
   color: #283136;
 }
-
-.filter-option label:hover{
+.filter-input:hover + label{
   color: #000000;
 }
 
-.filter-option label:disabled{
+.filter-input:disabled+label:disabled{
   opacity: 0.2;
 }
 
@@ -304,12 +318,102 @@ fieldset {
   border: none;
 }
 
+.pagination-list{
+}
 .pagination-item a{
-  color: #0000;
-  width: 50px;
-  height: 50px;
+  display: inline-block;
+  float: left;
+  color: #000000;
+  padding: 22px 18px;
   background-color: #eeeeee;
   text-align: center;
   vertical-align:middle;
+  border-radius: 2px;
+  margin-left: 10px;
+}
 
+.next a{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.pagination-item a:hover{
+  background-color: #dfdfdf;
+
+}
+
+.pagination-item a:active{
+
+}
+
+/*--Сетка--*/
+
+.main-header{
+  margin-bottom: ;
+}
+
+.main-nav{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 130px;
+  align-items: center;
+}
+
+.site-nav{
+  margin: 0;
+  padding: 0;
+  width:600px;
+  display: flex;
+  justify-content:space-between;
+
+}
+
+.user-nav{
+  margin: 0;
+  padding: 0;
+  width:180px;
+}
+
+.main-top{
+  display: flex;
+  justify-content: space-around;
+}
+
+.catalog{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.catalog-item{
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-us{
+  display: flex;
+  justify-content: space-around;
+}
+
+.clients-column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.road-map{
+  display: flex;
+  justify-content: space-around;
+  height: 415px;
+  align-items: center;
+}
+
+.left01{
+  background-color: #ffff;
+}
+
+.footer-social{
+  display: flex;
+  justify-content: space-around;
 }
