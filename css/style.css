@@ -356,12 +356,20 @@ fieldset {
 }
 
 .pagination-list{
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 .pagination-item a{
-  display: inline-block;
-  float: left;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height:50px;
+  width: 50px;
   color: #000000;
-  padding: 22px 18px;
   background-color: #eeeeee;
   text-align: center;
   vertical-align:middle;
@@ -534,6 +542,39 @@ fieldset {
 }
 
 .container-inner{
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sort-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.sort-list-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 58px;
+}
+
+.sort-model-wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 140px;
+}
+
+.sort-model{
+  padding-bottom: 33px;
+
+}
+
+.pagination-list{
+  padding-top: 27px;
+  padding-bottom: 60px;
 }

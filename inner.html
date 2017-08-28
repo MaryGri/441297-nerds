@@ -9,6 +9,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="wrapper">
       <nav class="main-nav">
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" alt="Логотип" width="161" height="67">
@@ -23,14 +24,18 @@
           <li ><a href="#" class="basket">Корзина</a></li>
         </ul>
       </nav>
+    </div>
     </header>
 
-    <main class="container">
-      <div class="wrapper">
+    <section class="page-title-wrap">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
+    </section>
+
+    <div class="wrapper">
+    <main class="container-inner">
       <section class="filters">
         <h2 class="visually-hidden">Cтоимость:</h2>
-        <p class="filter-type">Стоимость</p>
+        <p class="filter-type">Стоимость:</p>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get"
          oninput="price-output.value=price-count-field.value">
           <label class="visually-hidden" for="price-count-field">Диапазон стоимости</label>         <!-- ?-->
@@ -38,7 +43,7 @@
           <div class="output-area">
             от <output name="price-output">1</output>
             до <output name="price-output">15000</output>
-        </div>
+          </div>
         <fieldset>
           <legend class="filter-type">Сетки:</legend>
           <ul class="type-list">
@@ -93,31 +98,38 @@
         <button class="filters-button">Показать</a>
         </form>
       </section>
+
       <section>
        <h2 class="visually-hidden">Сортирока шаблонов</h2>
+       <div class="sort-list-wrap">
        <p class="filter-type"> Сортировать:</p>
        <ul class="sort-list">
          <li class="sort-item"><button class="sort-button">По цене</a></li>
          <li class="sort-item"><button class="sort-button">По типу</a></li>
          <li class="sort-item"><button class="sort-button">По названию</a></li>
        </ul>
+     </div>
 
+       <div class="sort-model-wrap">
        <p class="sort-model"><a href="#"><img src="img/img-sedona.jpg" alt="Сайт Sedona"></a></p>
        <p class="sort-model"><a href="#"><img src="img/img-pink.jpg" alt="Сайт Pink"></a></p>
        <p class="sort-model"><a href="#"><img src="img/img-barbershop.jpg" alt="Сайт Borodinsky"></a></p>
        <p class="sort-model"><a href="#"><img src="img/img-mishka.jpg" alt="Сайт Mishka"></a></p>
        <p class="sort-model"><a href="#"><img src="img/img-aplus.jpg" alt="Сайт A+"></a></p>
        <p class="sort-model"><a href="#"><img src="img/img-kvast.jpg" alt="Сайт Кваст"></a></p>
-
-      </section>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
-        <li class="pagination-item" ><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item next"><a href="#">Следующая</a></li>
-      </ul>
     </div>
+       <ul class="pagination-list">
+
+         <li class="pagination-item pagination-item-current"><a>1</a></li>
+         <li class="pagination-item" ><a href="#">2</a></li>
+         <li class="pagination-item"><a href="#">3</a></li>
+         <li class="pagination-item next"><a href="#">Следующая</a></li>
+       </ul>
+
+     </section>
+
     </main>
+    </div>
 
 
     <footer class="main-footer">
