@@ -104,13 +104,15 @@ a {
   background-color: #d7373b;
 }
 .catalog-column{
-  padding-bottom: 80px;
-  border-bottom: 2px solid #eeeeee;
+
+
 }
 .catalog{
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .catalog-item-name{
@@ -210,12 +212,19 @@ opacity: 0.1;
   line-height: 18px;
 }
 
-.footer-contacts span{
+.footer-contacts .nerds{
   text-transform: uppercase;
   font-weight: bold;
   color: #000000;
   font-size: 18px;
   line-height: 30px;
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+.footer-contacts .adress{
+  display: inline-block;
+  padding-bottom: 20px;
 }
 
 .footer-contacts-buttom{
@@ -225,7 +234,9 @@ opacity: 0.1;
   padding-right: 50px;
   background-color: #fb565a;
   border-radius: 2px;
+  margin-top: 40px;
 }
+
 
 .road-map{
   background-image: url("../img/map.jpg");
@@ -268,6 +279,10 @@ opacity: 0.1;
   background-color: #eeeeee;
   font-size: 55px;
   line-height: 55px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 115px;
 }
 
 .filter-type {
@@ -379,7 +394,7 @@ fieldset {
 
 .main-nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 130px;
   align-items: center;
@@ -390,7 +405,7 @@ fieldset {
   padding: 0;
   width:600px;
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
 
 }
 
@@ -426,7 +441,7 @@ fieldset {
 
 }
 
-.about-us{
+.about-us-12{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -435,30 +450,35 @@ fieldset {
   border-bottom: 2px solid #eeeeee;
 }
 .about-us-1{
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 680px;
+  width: ;
   height: 368px;
 }
 .about-us-2{
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 364px;
+  width: ;
   height: 408px;
 }
 .clients{
-  border-bottom: 2px solid #eeeeee;
-  margin-bottom: 80px;
+
 }
 .clients-column {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 80px;
 }
 
 .road-map{
@@ -480,10 +500,11 @@ fieldset {
   justify-content: space-between;
   flex-direction: column;
   background-color: #ffffff;
+  padding: 50px;
 
 }
 
-.footer-social{
+.footer-social-wrap{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -499,9 +520,13 @@ fieldset {
   margin-right: 12px;
 }
 .footer-inscription{
+  padding-left: 135px;
   display: flex;
   flex-direction: column;
   align-self: center;
+  flex-grow:1;
+}
 
-
+.main-footer{
+  padding-bottom: 75px;
 }
