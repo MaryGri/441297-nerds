@@ -394,7 +394,7 @@ fieldset {
 
 .main-nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: 130px;
   align-items: center;
@@ -403,22 +403,24 @@ fieldset {
 .site-nav{
   margin: 0;
   padding: 0;
-  width:600px;
   display: flex;
   justify-content:space-around;
-
+  width:600px;
 }
 
 .user-nav{
   margin: 0;
   padding: 0;
-  width:180px;
+
 }
 
 .main-top{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+.main-top-wrap{
+    background-color: #eeeeee;
 }
 .top-left{
   display: flex;
@@ -427,6 +429,8 @@ fieldset {
   align-items: flex-start;
   width: 378px;
   height: 268px;
+  padding: 0;
+  margin: 0;
 }
 .catalog{
   display: flex;
@@ -469,9 +473,7 @@ fieldset {
   width: ;
   height: 408px;
 }
-.clients{
 
-}
 .clients-column {
   margin: 0;
   padding: 0;
@@ -529,4 +531,9 @@ fieldset {
 
 .main-footer{
   padding-bottom: 75px;
+}
+
+.container-inner{
+  display: flex;
+  justify-content: space-between;
 }
