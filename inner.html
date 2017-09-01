@@ -38,12 +38,24 @@
         <p class="filter-type">Стоимость:</p>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get"
          oninput="price-output.value=price-count-field.value">
-          <label class="visually-hidden" for="price-count-field">Диапазон стоимости</label>         <!-- ?-->
+
+          <!--<label class="visually-hidden" for="price-count-field">Диапазон стоимости</label>
           <b>0</b><input type="range" min="0" max="15000" step="1" id="price-count-field" name="price"><b>15000</b>
           <div class="output-area">
             от <output name="price-output">1</output>
             до <output name="price-output">15000</output>
-          </div>
+          </div>-->
+         <div class="range-filter">
+           <div class="range-controls">
+             <div class="scale"><div style="width:70%" class="bar"></div></div>
+             <div class="toggle min-toggle"></div>
+             <div class="toggle max-toggle"></div>
+           </div>
+           <div class="price-controls">
+             от <input type="text" class="min-price" value="0" name="min-price">
+             до <input type="text" class="max-price" value="15 000" name="max-price">
+           </div>
+         </div>
         <fieldset>
           <legend class="filter-type">Сетки:</legend>
           <ul class="type-list">
