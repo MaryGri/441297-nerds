@@ -30,7 +30,6 @@
     <section class="page-title-wrap">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
     </section>
-
     <div class="wrapper">
     <main class="container-inner">
       <section class="filters">
@@ -38,13 +37,6 @@
         <p class="filter-type">Стоимость:</p>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get"
          oninput="price-output.value=price-count-field.value">
-
-          <!--<label class="visually-hidden" for="price-count-field">Диапазон стоимости</label>
-          <b>0</b><input type="range" min="0" max="15000" step="1" id="price-count-field" name="price"><b>15000</b>
-          <div class="output-area">
-            от <output name="price-output">1</output>
-            до <output name="price-output">15000</output>
-          </div>-->
          <div class="range-filter">
            <div class="range-controls">
              <div class="scale"><div style="width:70%" class="bar"></div></div>
@@ -56,23 +48,30 @@
              до <input type="text" class="max-price" value="15 000" name="max-price">
            </div>
          </div>
+
         <fieldset>
           <legend class="filter-type">Сетки:</legend>
           <ul class="type-list">
-            <li class="filter-option">
-              <input class=" filter-input filter-input-radio"
+            <li class="filter-option-grid">
+              <label for="grid-adaptive">
+              <input class="visually-hidden filter-input filter-input-radio"
                type="radio" id="grid-adaptive" name="grid" value="adaptive" checked>
-               <label for="grid-adaptive">Адаптивная</label>
+               <span class="filter-input-radio-custom"></span>
+               <span>Адаптивная</span></label>
             </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-radio"
+            <li class="filter-option-grid">
+              <label for="grid-fixed">
+              <input class="visually-hidden filter-input filter-input-radio"
                type="radio" id="grid-fixed" name="grid" value="Fixed">
-               <label for="grid-fixed">Фиксированная</label>
+               <span class="filter-input-radio-custom"></span>
+               <span>Фиксированная</span></label>
             </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-radio"
-               type="radio" id="grid-rubber" name="grid" value="rubber">
-               <label for="grid-rubber">Резиновая</label>
+            <li class="filter-option-grid">
+              <label for="grid-rubber">
+              <input class="visually-hidden filter-input filter-input-radio"
+               type="radio" id="grid-rubber" name="grid" value="rubber" >
+               <span class="filter-input-radio-custom"></span>
+               <span>Резиновая</span></label>
             </li>
           </ul>
         </fieldset>
@@ -80,30 +79,40 @@
         <fieldset>
           <legend class="filter-type">Особенности:</legend>
           <ul class="type-list">
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox"
+            <li class="filter-option-features">
+              <label for="filter-slider">
+              <input class="visually-hidden filter-input filter-input-checkbox"
               type="checkbox" id="filter-slider" name="slider" checked>
-              <label for="filter-slider">Слайдер</label>
+              <span class="filter-input-checkbox-custom"></span>
+              <span>Слайдер</span></label>
             </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox"
+            <li class="filter-option-features">
+              <label for="filter-advantage-block">
+              <input class="visually-hidden filter-input filter-input-checkbox"
                type="checkbox"  id="filter-advantage-block" name="advantage-block">
-               <label for="filter-advantage-block">Блок преимуществ</label>
+               <span class="filter-input-checkbox-custom"></span>
+               <span>Блок преимуществ</span></label>
             </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox"
+            <li class="filter-option-features">
+              <label for="filter-news">
+              <input class="visually-hidden filter-input filter-input-checkbox"
               type="checkbox" id="filter-news" name="news" checked>
-              <label for="filter-news">Новости</label>
+              <span class="filter-input-checkbox-custom"></span>
+              <span>Новости</span></label>
             </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox"
+            <li class="filter-option-features">
+              <label for="filter-gallery">
+              <input class="visually-hidden filter-input filter-input-checkbox"
               type="checkbox" id="filter-gallery" name="gallery">
-              <label for="filter-gallery">Галерея</label>
+              <span class="filter-input-checkbox-custom"></span>
+              <span>Галерея</span></label>
             </li>
-            <li class="filter-option">
-              <input class="filter-input filter-input-checkbox"
+            <li class="filter-option-features">
+              <label for="filter-bascet">
+              <input class="visually-hidden filter-input filter-input-checkbox"
               type="checkbox" id="filter-bascet" name="bascet">
-              <label for="filter-bascet">Корзина</label>
+              <span class="filter-input-checkbox-custom"></span>
+              <span>Корзина</span></label>
             </li>
           </ul>
         </fieldset>
@@ -123,12 +132,12 @@
      </div>
 
        <div class="sort-model-wrap">
-       <p class="sort-model"><a href="#"><img src="img/img-sedona.jpg" alt="Сайт Sedona"></a></p>
-       <p class="sort-model"><a href="#"><img src="img/img-pink.jpg" alt="Сайт Pink"></a></p>
-       <p class="sort-model"><a href="#"><img src="img/img-barbershop.jpg" alt="Сайт Borodinsky"></a></p>
-       <p class="sort-model"><a href="#"><img src="img/img-mishka.jpg" alt="Сайт Mishka"></a></p>
-       <p class="sort-model"><a href="#"><img src="img/img-aplus.jpg" alt="Сайт A+"></a></p>
-       <p class="sort-model"><a href="#"><img src="img/img-kvast.jpg" alt="Сайт Кваст"></a></p>
+       <article class="sort-model"><a href="#"><img src="img/img-sedona.jpg" alt="Сайт Sedona" width="358"></a></article>
+       <article class="sort-model"><a href="#"><img src="img/img-pink.jpg" alt="Сайт Pink" width="358"></a></article>
+       <article class="sort-model"><a href="#"><img src="img/img-barbershop.jpg" alt="Сайт Borodinsky" width="358"></a></article>
+       <article class="sort-model"><a href="#"><img src="img/img-mishka.jpg" alt="Сайт Mishka" width="358"></a></article>
+       <article class="sort-model"><a href="#"><img src="img/img-aplus.jpg" alt="Сайт A+" width="358"></a></article>
+       <article class="sort-model"><a href="#"><img src="img/img-kvast.jpg" alt="Сайт Кваст" width="358"></a></article>
     </div>
        <ul class="pagination-list">
 
@@ -155,7 +164,7 @@
          ул. Б. Конюшенная, д. 19/8</span><br>
          тел. +7 (812) 275-75-75
       </p>
-      <a class="buttom footer-contacts-buttom" href="#" >Напишите нам</a>
+      <a class="btn footer-contacts-btn" href="#" >Напишите нам</a>
     </div>
      <div class="right02">
       <a class="main-footer-logo mini-logo" href="index.html">
