@@ -88,6 +88,7 @@ input[type="radio"].visually-hidden {
 .site-nav a {
   color: #283136;
   text-transform: uppercase;
+  padding-bottom: 7px;
 }
 
 .user-nav a:hover,
@@ -170,18 +171,19 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-text{
-  width: 380px;
+  width: 550px;
   padding: 38px 0;
   color: #283136;
 }
 
 .slide-title{
-  font-size: 36px;
+  font-size: 55px;
   line-height: 1;
   font-weight: bold;
   color: black;
-
+  padding-bottom: 25px;
 }
+
 .slider-controls label{
   display: inline-block;
   width: 4px;
@@ -258,10 +260,6 @@ input[type="radio"].visually-hidden {
   opacity: 0;
 }
 
-
-.slide:nth-child(3){
-  display: block;
-}
 .slide{
   display: none;
 }
@@ -369,6 +367,9 @@ input[type="radio"].visually-hidden {
 
 .service-list{
   list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
 }
 
 .service-item{
@@ -390,29 +391,35 @@ input[type="radio"].visually-hidden {
 .middle-paragraf{
   font-size: 45px;
   line-height: 45px;
+  padding-bottom: 34px;
 }
 
 .our-servises{
   text-transform: uppercase;
   font-weight: bold;
+  padding-top: 38px;
 }
 
 caption{
   text-transform: uppercase;
   font-weight: bold;
   white-space:nowrap;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 th{
   font-size: 45px;
   line-height: 10.06px;
   padding-bottom:30px;
+  padding-right: 28px;
 }
 tr{
   line-height: 18px;
 }
 
+sup{
+  font-size: 25px;
+}
 .clients-column {
   margin: 0;
   padding: 0;
@@ -575,6 +582,11 @@ opacity: 0.1;
 
 
 /*--INNER--*/
+.site-nav-current{
+  border-bottom: 2px solid #fb565a;
+  pointer-events: none;
+}
+
 .page-title {
   background-color: #eeeeee;
   font-size: 55px;
@@ -703,7 +715,7 @@ fieldset {
 }
 
 
-.filter-input-radio-custom{
+.grid-adaptive{
   position: relative;
   width: 35px;
   height: 25px;
@@ -719,6 +731,13 @@ fieldset {
   display: inline-block;
   vertical-align: middle;
 }
+
+.filter-option-grid label:hover + .filter-input-radio-custom::after{
+opacity: 1;
+color: black;
+}
+
+
 .type-list{
   padding: 0;
   margin: 0;
@@ -747,10 +766,6 @@ fieldset {
 
 .filter-input-radio-custom:hover{
   opacity: 1;
-}
-
-.filter-input-radio-custom:disabled{
-  opacity: 0.1;
 }
 
 .filter-option-features label{
@@ -941,11 +956,127 @@ fieldset {
   cursor: pointer;
 }
 
-.sort-model:hover{
+.sort-model::before:hover{
   opacity: 1;
 }
 
 .pagination-list{
   padding-top: 27px;
   padding-bottom: 60px;
+}
+
+/**/
+.filter-option-grid label:hover .filter-input-radio-custom::after{
+  transition: all .3s;
+opacity: 0.1;
+color: black;
+}
+
+.modal{
+  position: fixed;
+  color: #000000;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  background-color: white;
+}
+
+.modal-writeback{
+  width: 760px;
+  padding: 75px 100px;
+
+  bottom: 179px;
+  left: 50%;
+  margin-left: -480px;
+  z-index: 100;
+}
+
+.modal-close{
+  position: absolute;
+  top:80px;
+  right:90px ;
+
+  height: 22px;
+  width: 22px;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top:10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #fecccd;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-description {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.writeback-form p {
+  margin: 0;
+  margin-bottom: 39px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.writeback-form{
+  width: 100%;
+}
+
+.writeback-wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.writeback-form input{
+  padding: 18px 16px;
+  width: 324px;
+  margin-top: 12px;
+}
+
+.writeback-form p:first-child{
+  margin-right: 40px;
+}
+.writeback-form label{
+
+}
+
+.writeback-form textarea{
+  margin-top: 12px;
+  padding: 12px 15px;
+  width: 730px;
+  min-height: 114px;
+}
+
+.modal-close:hover::after,
+.modal-close:hover::before{
+  background-color: #fb565a;
+}
+
+.modal-close:active::after,
+.modal-close:active::before{
+  background-color: #ffeeee;
+  outline: none;
+  border: none;
 }
