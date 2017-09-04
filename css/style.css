@@ -986,7 +986,7 @@ color: black;
   bottom: 179px;
   left: 50%;
   margin-left: -480px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .modal-close{
@@ -1053,6 +1053,11 @@ color: black;
   padding: 18px 16px;
   width: 324px;
   margin-top: 12px;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .writeback-form p:first-child{
@@ -1067,6 +1072,12 @@ color: black;
   padding: 12px 15px;
   width: 730px;
   min-height: 114px;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+   resize: none;
 }
 
 .modal-close:hover::after,
@@ -1076,6 +1087,13 @@ color: black;
 
 .modal-close:active::after,
 .modal-close:active::before{
+  background-color: blue;
+  outline: none;
+  border: none;
+}
+
+.modal-close:focus::after,
+.modal-close:focus::before{
   background-color: #ffeeee;
   outline: none;
   border: none;
