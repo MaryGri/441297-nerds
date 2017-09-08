@@ -39,8 +39,7 @@
     <section class="filters">
         <h2 class="visually-hidden">Cтоимость:</h2>
         <p class="filter-type">Стоимость:</p>
-        <form class="filter" action="https://echo.htmlacademy.ru" method="get"
-              oninput="price-output.value=price-count-field.value">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale"><div style="width:70%" class="bar"></div></div>
@@ -128,7 +127,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="filters-button">Показать</a>
+        <button class="filters-button">Показать</button>
       </form>
     </section>
 
@@ -140,16 +139,88 @@
            <li class="sort-item"><button class="sort-button current">По цене</button></li>
            <li class="sort-item"><button class="sort-button">По типу</button></li>
            <li class="sort-item"><button class="sort-button">По названию</button></li>
+           <li class="sort-item"><a class="current-button button-down"></a></li>
+           <li class="sort-item"><a class="button-up"></a></li>
          </ul>
        </div>
 
        <div class="sort-model-wrap">
-         <article class="sort-model"><a href="#"><img src="img/img-sedona.jpg" alt="Сайт Sedona" width="358"></a></article>
-         <article class="sort-model"><a href="#"><img src="img/img-pink.jpg" alt="Сайт Pink" width="358"></a></article>
-         <article class="sort-model"><a href="#"><img src="img/img-barbershop.jpg" alt="Сайт Borodinsky" width="358"></a></article>
-         <article class="sort-model"><a href="#"><img src="img/img-mishka.jpg" alt="Сайт Mishka" width="358"></a></article>
-         <article class="sort-model"><a href="#"><img src="img/img-aplus.jpg" alt="Сайт A+" width="358"></a></article>
-         <article class="sort-model"><a href="#"><img src="img/img-kvast.jpg" alt="Сайт Кваст" width="358"></a></article>
+         <article class="sort-model">
+           <a href="#">
+             <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="358">
+           </a>
+           <div class="modal-oder modal-site-oder">
+             <div class="modal-site-oder-wrap">
+               <h2>Sedona</h2>
+               <p>Информационный сайт<br>
+                  для туристов</p>
+               <button class="button-site-oder">9 900 руб.</button>
+             </div>
+           </div>
+         </article>
+         <article class="sort-model">
+           <a href="#">
+             <img src="img/img-pink.jpg" alt="Сайт Pink" width="358">
+           </a>
+           <div class="modal-oder modal-site-oder">
+             <div class="modal-site-oder-wrap">
+               <h2>Pink App</h2>
+               <p>Продуктовый лендинг
+                  приложения для iOS и Android</p>
+               <button class="button-site-oder">9 900 руб.</button>
+             </div>
+           </div>
+         </article>
+         <article class="sort-model">
+           <a href="#">
+             <img src="img/img-barbershop.jpg" alt="Сайт Borodinsky" width="358">
+           </a>
+           <div class="modal-oder modal-site-oder">
+             <div class="modal-site-oder-wrap">
+               <h2>Borodinsky</h2>
+               <p>Сайт барбершопа</p>
+               <button class="button-site-oder">9 900 руб.</button>
+             </div>
+           </div>
+
+         </article>
+         <article class="sort-model">
+           <a href="#">
+             <img src="img/img-mishka.jpg" alt="Сайт Mishka" width="358">
+           </a>
+           <div class="modal-oder modal-site-oder">
+             <div class="modal-site-oder-wrap">
+               <h2>Mishka</h2>
+               <p>Интернет-магазин товаров
+                  ручной работы</p>
+               <button class="button-site-oder">12 900 руб.</button>
+             </div>
+           </div>
+         </article>
+         <article class="sort-model">
+           <a href="#">
+             <img src="img/img-aplus.jpg" alt="Сайт A+" width="358">
+           </a>
+           <div class="modal-oder modal-site-oder">
+             <div class="modal-site-oder-wrap">
+               <h2>A+</h2>
+               <p>Сайт университета</p>
+               <button class="button-site-oder">10 900 руб.</button>
+             </div>
+           </div>
+         </article>
+         <article class="sort-model">
+           <a href="#">
+             <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="358">
+           </a>
+           <div class="modal-oder modal-site-oder">
+             <div class="modal-site-oder-wrap">
+               <h2>Кваст</h2>
+               <p>Интернет-магазин по продаже кваса</p>
+               <button class="button-site-oder">9 900 руб.</button>
+             </div>
+           </div>
+         </article>
     </div>
        <ul class="pagination-list">
          <li class="pagination-item"><a  class="current">1</a></li>
@@ -196,6 +267,7 @@
          </p>
        </div>
      </div>
+   </div>
   </footer>
  </body>
 </html>
