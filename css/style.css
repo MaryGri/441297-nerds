@@ -62,12 +62,14 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   width: 100%;
-  min-height: 130px;
+  min-height: 100px;
   align-items: center;
   color: #000000;
   background-color: #eeeeee;
   background-size: 100%;
+  min-width: 438px;
 }
 
 .user-nav,
@@ -75,15 +77,22 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
+  line-height: 30px;
+  padding-top: 5px;
+  padding-left: 3px;
 }
 
 .site-nav{
-  min-width: 600px;
+  /*min-width: 600px;*/
   display: flex;
   justify-content:space-around;
   flex-wrap: wrap;
+  align-items: baseline;
 }
-
+.site-nav a{
+  margin-right: 48px;
+  line-height: 30px;
+}
 .user-nav{
   display: flex;
   justify-content: space-between;
@@ -130,24 +139,24 @@ input[type="radio"].visually-hidden {
 
 .main-top-wrap{
     background-color: #eeeeee;
-    margin-bottom: 80px;
+    margin-bottom: 95px;
 }
 
 
 .slider{
   position: relative;
-  height: 412px;
+  height: 395px;
   width: 1160px;
   margin: 0 auto;
 }
 
 .slider-controls{
   position: absolute;
-  bottom: 96px;
+  bottom: 90px;
   left:50%;
   width: 200px;
   height: 10px;
-  margin-left: -50px;
+  margin-left: -100px;
   text-align: center;
   z-index: 1000;
 }
@@ -169,10 +178,11 @@ input[type="radio"].visually-hidden {
 
 .slide-title{
   font-size: 55px;
-  line-height: 1;
+  line-height: 55px;
   font-weight: bold;
   color: black;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 27px;
 }
 
 .slider-controls label{
@@ -206,9 +216,9 @@ input[type="radio"].visually-hidden {
 
 .slides .btn{
   display: block;
-  width: 248px;
+  width: 240px;
   padding: 16px 0;
-  margin-top: 25px;
+  margin-top: 38px;
   font-size: 16px;
   line-height: 18px;
   color: white;
@@ -250,7 +260,7 @@ input[type="radio"].visually-hidden {
 .slide:nth-child(1){
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 100% 5px;
+  background-position: 93% 0px;
 }
 
 .slide:nth-child(2){
@@ -291,21 +301,23 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: flex-start;
   min-height: 348px;
-
+}
+.catalog-item:nth-child(3n){
+  margin-right: 60px;
 }
 
 .catalog-item-name{
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 22px;
+  margin-top: 20px;
+  margin-bottom: 17px;
 }
 
 .btn-order{
   display: inline-block;
   width: 160px;
-  padding: 16px 0;
+  padding: 14px 0;
   text-align: center;
   border-radius: 2px;
   color: white;
@@ -364,8 +376,8 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 40px;
-  padding-bottom: 75px;
+  margin-top: 37px;
+  padding-bottom: 63px;
   border-bottom: 2px solid #eeeeee;
 }
 .about-us-studio{
@@ -376,27 +388,19 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: flex-start;
 }
-.about-us-table{
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
 
-}
 
+.our-servises{}
 .service-list{
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 30px;
 }
 
 .service-item{
   position: relative;
   padding-left: 38px;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 
 .service-item::before{
@@ -413,17 +417,31 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   line-height: 45px;
   margin-bottom: 34px;
+  margin-top: 36px;
 }
 
 .our-servises{
   text-transform: uppercase;
   font-weight: bold;
-  padding-top: 38px;
+  padding-top:  38px;
+  padding-bottom:25px;
+}
+.about-us-table{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url("../img/nerds-illustration.png");
+  background-repeat: no-repeat;
+  background-position: 8px 0;
 }
 .main-table{
-  margin-top: 38px;
+  margin-top: 246px;
 }
 caption{
+  margin-top: 2px;
   text-transform: uppercase;
   font-weight: bold;
   white-space:nowrap;
@@ -434,7 +452,8 @@ th{
   font-size: 45px;
   line-height: 45px;
   padding-bottom:20px;
-  padding-right: 28px;
+  padding-right: 25px;
+  t
 }
 tr{
   line-height: 18px;
@@ -450,12 +469,12 @@ sup{
   flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 75px;
   list-style: none;
 }
 .clients-item{
   position: relative;
-  padding-right: 43px;
+  padding-right: 40px;
 }
 
 .clients-item:not(:nth-child(4n))::after{
@@ -464,7 +483,7 @@ sup{
   width: 2px;
   height: 51px;
   top: 64px;
-  right: 0;
+  right: 16px;
   background-color: #eeeeee;
 }
 
@@ -511,7 +530,7 @@ opacity: 0.1;
   justify-content: space-between;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 50px;
+  padding: 41px 50px ;
 
 }
 
@@ -528,19 +547,22 @@ opacity: 0.1;
   line-height: 30px;
   display: inline-block;
   padding-bottom: 30px;
+  padding-left: 12px;
 }
 
 .footer-contacts .adress{
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-left: 12px;
 }
 
 .footer-contacts-btn{
   display: inline-block;
-  padding: 15px 0;
+  padding: 13px 0;
   background-color: #fb565a;
   border-radius: 2px;
-  margin-top: 40px;
+  margin-top: 48px;
+  margin-left: 12px;
   color: white;
   width: 219px;
   text-align: center;
@@ -616,7 +638,7 @@ opacity: 0.1;
   line-height: 22px;
 }
 
-.footer-inscription span{
+.footer-inscription p:first-child{
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -629,7 +651,8 @@ opacity: 0.1;
 }
 
 .footer-inscription{
-  padding-left: 135px;
+  padding-left: 126px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -639,7 +662,7 @@ opacity: 0.1;
 
 /*--INNER--*/
 .container-inner{
-  margin-top: 60px;
+  margin-top: 52px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -658,7 +681,8 @@ opacity: 0.1;
   padding: 0;
   margin: 0;
   text-align: center;
-  padding-bottom: 115px;
+  padding-top: 58px;
+  padding-bottom: 107px;
 }
 .filter{
   margin-top: 45px;
@@ -915,6 +939,7 @@ fieldset {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 45px;
   margin-left: 140px;
 }
@@ -925,6 +950,8 @@ fieldset {
   display: flex;
   justify-content: space-between;
   margin-left:20px ;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 /*.sort-item:last-child{
@@ -1109,7 +1136,7 @@ fieldset {
 }
 
 .modal{
-  display: block;
+  display: none;
 
 }
 
