@@ -685,7 +685,7 @@ opacity: 0.1;
   padding-bottom: 107px;
 }
 .filter{
-  margin-top: 45px;
+  margin-top: 49px;
 }
 .range-filter{
   width: 260px;
@@ -726,6 +726,11 @@ opacity: 0.1;
   cursor: pointer;
 }
 
+.price-controls{
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
 .price-controls input{
   width: 60px;
   padding:8px 10px;
@@ -736,6 +741,7 @@ opacity: 0.1;
   font-size: 16px;
   line-height: 24px;
   color:#283136;
+  text-align: center;
 }
 
 .price-controls .min-price{
@@ -750,15 +756,13 @@ opacity: 0.1;
 }
 
 
-
-
 .filter-type {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
-
-
 
 .type-list,
 .sort-list,
@@ -768,6 +772,12 @@ opacity: 0.1;
 
 fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+}
+.filter-option-grid{
+  vertical-align: middle;
 }
 
 .filters-button{
@@ -812,8 +822,9 @@ fieldset {
   margin: 0;
   margin-top: 10px;
 }
-.filter-option-grid label{
-  margin-bottom: 25px;
+.filter-option-grid label,
+.filter-option-features label{
+  margin-bottom: 15px;
   color: #283136;
 }
 
@@ -883,8 +894,8 @@ fieldset {
   margin-top: 10px;
 }
 .filter-option-features label{
-  margin-bottom: 25px;
-  color: #283136;
+
+
 }
 
 .filter-option-features label:hover span{
@@ -1003,7 +1014,7 @@ fieldset {
 .sort-model{
   padding-bottom: 33px;
   position: relative;
-  padding-top: 42px;
+  padding-top: 36px;
 }
 
 .sort-model img{
@@ -1018,7 +1029,7 @@ fieldset {
   background-image: url("../img/browser.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  top:3px;
+  top:0;
   left: 0;
   opacity: 0.2;
   cursor: pointer;
@@ -1080,10 +1091,12 @@ fieldset {
 .pagination-list{
   margin: 0;
   padding: 0;
-
   display: flex;
-  justify-content:center;
+  justify-content:flex-start;
   align-items: center;
+  margin-left: 130px;
+  padding-top: 19px;
+  padding-bottom: 60px;
 }
 .pagination-item a{
   display: flex;
@@ -1100,8 +1113,10 @@ fieldset {
 }
 
 .next a{
-  padding-left: 80px;
-  padding-right: 80px;
+  line-height: 18px;
+  padding-left: 105px;
+  padding-right: 105px;
+  text-transform: uppercase;
 }
 .pagination-item a:hover{
   background-color: #dfdfdf;
@@ -1124,8 +1139,7 @@ fieldset {
 /*--Сетка--*/
 
 .pagination-list{
-  padding-top: 27px;
-  padding-bottom: 60px;
+
 }
 
 /**/
