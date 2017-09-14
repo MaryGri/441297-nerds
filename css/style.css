@@ -336,7 +336,11 @@ input[type="radio"].visually-hidden {
           align-items: flex-start;
   min-height: 348px;
 }
-
+.catalog-img-wrap{
+  height: 145px;
+  width: 300px;
+  background-color: #fb565a;
+}
 .catalog-item:nth-child(3n){
   margin-right: 60px;
 }
@@ -580,43 +584,39 @@ sup{
 }
 
 .road-map{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
   height: 415px;
   width: 100%;
-  margin: 0;
-  bottom: 0;
   margin-bottom: 65px;
   background-image: url("../img/map-road.jpg");
+  background-color: #b5b5b5;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size:cover;
 }
 
 .marker-wrap{
-  margin-right: 95px;
+  position: absolute;
+  top: 20%;
+  right: 29%;
 }
 
 .adress-wrap{
+  position: absolute;
+  top:12%;
+  left: 13%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
-  padding: 41px 50px ;
-
+  padding: 45px 50px ;
 }
 
 .footer-contacts{
@@ -642,7 +642,9 @@ sup{
   padding-bottom: 10px;
   padding-left: 12px;
 }
-
+.footer-contacts .number{
+  padding-left: 12px;
+}
 .footer-contacts-btn{
   display: inline-block;
   vertical-align: middle;
@@ -890,7 +892,7 @@ sup{
   list-style: none;
 }
 
-fieldset {
+.filter-fieldset {
   border: none;
   padding: 0;
   margin: 0;
@@ -1120,6 +1122,7 @@ fieldset {
 
 .button-down{
   display: inline-block;
+  vertical-align: middle;
   width: 11px;
   height: 11px;
   background-image: url("../img/icon-down-dir.svg");
@@ -1131,6 +1134,7 @@ fieldset {
 
 .button-up{
   display: inline-block;
+  vertical-align: middle;
   width: 11px;
   height: 11px;
   background-image: url("../img/icon-up-dir.svg");
@@ -1173,8 +1177,13 @@ fieldset {
   padding-top: 36px;
 }
 
+.sort-img-wrap{
+  width: 358px;
+  height: 574px;
+  background-color:#e9e9e9;
+}
 .sort-model img{
-  border: 1px solid #e9e9e9;
+  border: 2px solid #e9e9e9;
 }
 
 .sort-model::before{
@@ -1185,7 +1194,7 @@ fieldset {
   background-image: url("../img/browser.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  top:0;
+  top:-2px;
   left: 0;
   opacity: 0.2;
   cursor: pointer;
@@ -1411,9 +1420,6 @@ fieldset {
 .writeback-form p:first-child{
   margin-right: 40px;
 }
-.writeback-form label{
-
-}
 
 .writeback-form textarea{
   font-family: "Roboto",sans-serif;
@@ -1444,6 +1450,7 @@ fieldset {
 
 .button-writeback{
   display: inline-block;
+  vertical-align: middle;
   color: white;
   background-color: #fb565a;
   text-transform: uppercase;
@@ -1513,6 +1520,7 @@ fieldset {
 
 .button-site-oder{
   display: inline-block;
+  vertical-align: middle;
   padding:16px 0;
   width:200px;
   color: white;
@@ -1526,6 +1534,10 @@ fieldset {
   font-size: 16px;
   line-height: 18px;
   cursor: pointer;
+}
+
+.button-site-oder:hover{
+  background-color: #e74246;
 }
 
 .modal-oder {

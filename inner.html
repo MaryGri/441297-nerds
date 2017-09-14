@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/min-style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -52,7 +52,7 @@
             </div>
           </div>
 
-        <fieldset>
+        <fieldset class="filter-fieldset">
           <legend class="filter-type">Сетка:</legend>
           <ul class="type-list">
             <li class="filter-option-grid">
@@ -82,7 +82,7 @@
           </ul>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="filter-fieldset">
           <legend class="filter-type">Особенности:</legend>
           <ul class="type-list">
             <li class="filter-option-features">
@@ -147,7 +147,9 @@
        <div class="sort-model-wrap">
          <article class="sort-model">
            <a href="#">
-             <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="358" height="574">
+             <div class="sort-img-wrap">
+               <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="356" height="574">
+             </div>
            </a>
            <div class="modal-oder modal-site-oder">
              <div class="modal-site-oder-wrap">
@@ -160,7 +162,9 @@
          </article>
          <article class="sort-model">
            <a href="#">
-             <img src="img/img-pink.jpg" alt="Сайт Pink" width="358" height="574">
+             <div class="sort-img-wrap">
+               <img src="img/img-pink.jpg" alt="Сайт Pink" width="356" height="574">
+             </div>
            </a>
            <div class="modal-oder modal-site-oder">
              <div class="modal-site-oder-wrap">
@@ -173,7 +177,9 @@
          </article>
          <article class="sort-model">
            <a href="#">
-             <img src="img/img-barbershop.jpg" alt="Сайт Borodinsky" width="358" height="574">
+             <div class="sort-img-wrap">
+               <img src="img/img-barbershop.jpg" alt="Сайт Borodinsky" width="356" height="574">
+             </div>
            </a>
            <div class="modal-oder modal-site-oder">
              <div class="modal-site-oder-wrap">
@@ -186,7 +192,9 @@
          </article>
          <article class="sort-model">
            <a href="#">
-             <img src="img/img-mishka.jpg" alt="Сайт Mishka" width="358" height="574">
+             <div class="sort-img-wrap">
+               <img src="img/img-mishka.jpg" alt="Сайт Mishka" width="356" height="574">
+             </div>
            </a>
            <div class="modal-oder modal-site-oder">
              <div class="modal-site-oder-wrap">
@@ -199,7 +207,9 @@
          </article>
          <article class="sort-model">
            <a href="#">
-             <img src="img/img-aplus.jpg" alt="Сайт A+" width="358" height="574">
+             <div class="sort-img-wrap">
+               <img src="img/img-aplus.jpg" alt="Сайт A+" width="356" height="574">
+             </div>
            </a>
            <div class="modal-oder modal-site-oder">
              <div class="modal-site-oder-wrap">
@@ -211,7 +221,9 @@
          </article>
          <article class="sort-model">
            <a href="#">
-             <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="358" height="574">
+             <div class="sort-img-wrap">
+               <img src="img/img-kvast.jpg" alt="Сайт Кваст" width="356" height="574">
+             </div>
            </a>
            <div class="modal-oder modal-site-oder">
              <div class="modal-site-oder-wrap">
@@ -242,7 +254,7 @@
           <span class="nerds">Nёrds Design Studio</span><br>
           <span class="adress">191186, Санкт-Петербург,<br>
            ул. Б. Конюшенная, д. 19/8</span><br>
-           тел. +7 (812) 275-75-75
+           <span class="number">тел. +7 (812) 275-75-75</span>
         </p>
        <a class="btn footer-contacts-btn" href="#" >Напишите нам</a>
       </div>
@@ -257,9 +269,9 @@
      <div class="wrapper">
        <div class="footer-social-wrap">
          <ul class="social-networks">
-           <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="vk.com" ></a></li>
-           <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="facebook.com" ></a></li>
-           <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Instagram" ></a></li>
+           <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="vk.com" width="28" height="19"></a></li>
+           <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="facebook.com" width="14" height="19"></a></li>
+           <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Instagram" width="22" height="22"></a></li>
          </ul>
          <div class="footer-inscription">
            <p>Давайте дружить, это выгодно!</p><br>
